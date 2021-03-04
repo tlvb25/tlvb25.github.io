@@ -56,8 +56,14 @@ a img {
 
 
 /* GLOBAL STYLES */
+html {
+  box-shadow: 0 0 0 30px #000 inset;
+  padding: 0 30px;
+
+}
 body {
   font-family: helvetica, arial, sans;
+
 
 }
 h1 {
@@ -84,6 +90,9 @@ h2 ~ p {
 .header {
   background-color: black;
   color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
 }
 .header-nav {
   float: right;
@@ -102,6 +111,9 @@ h2 ~ p {
 
 .header-nav a {
   color: white;
+}
+
+.nav-links a {
   font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;
@@ -119,6 +131,7 @@ h2 ~ p {
   box-sizing: border-box;
   display: block;
   height: 10vh; 
+  left: -30px;
   padding: 10px;
   position: relative;
   text-align: center;
@@ -126,15 +139,45 @@ h2 ~ p {
 }
 .header-logo img {
   height: 80%;
+  width: 4.3vh;
 }
-.header-nav a:active,
-.header-nav a:hover {
+.nav-links a:active,
+.nav-links a:hover {
   color: orangered;
 }
 
 .header-logo:hover,
-.header-logo:active {
+.header-logo:active { 
   background-color: #ed6e2f;
+}
+/* FOOTER STYLES */
+.footer {
+  background-color: #000;
+  padding: 10vh 0 15vh;
+  text-align: center;
+}
+
+.footer img {
+    width: 50px;
+}
+
+.footer h3 {
+  color: white;
+  padding-top: 1.5em;
+  text-transform: uppercase;
+}
+
+.footer span {
+  color: grey;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin: 2em 1em 0;
+}
+
+.footer-nav a {
+  color: #ccc;
 }
 
 /* HERO STYLES */
